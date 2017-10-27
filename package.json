@@ -1,0 +1,68 @@
+{
+  "name": "angular-app",
+  "version": "0.0.1",
+  "description": "simple angularjs app, with rollup, karma+jasmine+mocha",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node_modules/.bin/rollup -c --hide-modules",
+    "test": "mocha -r jsdom-global/register",
+    "start": "browser-sync start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariesrei/ngApp.git"
+  },
+  "keywords": [
+    "angularjs",
+    "+",
+    "rollup",
+    "+",
+    "karma",
+    "+",
+    "mocha",
+    "+",
+    "jasmine"
+  ],
+  "author": "Aries M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariesrei/ngApp/issues"
+  },
+  "homepage": "https://github.com/ariesrei/ngApp#readme",
+  "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "browser-sync": "^2.18.13",
+    "chai": "^4.1.2",
+    "eslint": "^4.9.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "jasmine-core": "^2.8.0",
+    "jsdom": "^11.3.0",
+    "jsdom-global": "^3.0.2",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-requirejs": "^1.1.0",
+    "karma-rollup-plugin": "^0.2.4",
+    "karma-rollup-preprocessor": "^5.0.1",
+    "mocha": "^4.0.1",
+    "mocha-jsdom": "^1.1.0",
+    "requirejs": "^2.3.5",
+    "rollup": "^0.50.0",
+    "rollup-plugin-angular": "^0.5.3",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-browsersync": "^0.2.6",
+    "rollup-plugin-commonjs": "^8.2.5",
+    "rollup-plugin-inject": "^2.0.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-typescript": "^0.8.1"
+  }
+}

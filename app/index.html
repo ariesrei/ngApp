@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html ng-app="ngApp">
+
+<head>
+	<title>Angular + Rollup + Karma Test Setup</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<body>
+
+<div class="container">
+
+	<div class="row" ng-controller="appController as appCtrl">
+		
+		<div class="col-md-12" style="margin-bottom: 50px;">
+			<h1>Simple angular application using the following</h1>
+
+			<h2>Setup</h2>
+			<ol>
+				<li>Angular Js 1.6.x</li>
+				<li>RollupJS</li>
+				<li>Karma + Jasmine</li>
+				<li>Mocha Reporter</li>
+				<li>BrowserSync - Http server</li>
+				<li>ES6 Classes</li>
+				<li>Babel transpiler</li>
+			</ol>
+
+			<pre>
+				Command: npm start / npm test
+			</pre>
+		</div>
+
+		<div class="col-md-6">
+			Data from angular controller:
+			<div entry-one></div>
+		</div>
+		
+		<div class="col-md-6">
+			Data from angular services:
+			<div entry-two></div>
+		</div>
+
+	</div>
+
+</div>
+
+<script src="js/bundle.js"></script>
+
+</body>
+
+</html>
